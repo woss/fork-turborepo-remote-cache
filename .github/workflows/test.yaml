@@ -21,7 +21,7 @@ jobs:
     name: Coverage
     steps:
       - name: Harden Runner
-        uses: step-security/harden-runner@5ef0c079ce82195b2a36a210272d6b661572d83e # v2.14.2
+        uses: step-security/harden-runner@a90bcbc6539c36a85cdfeb73f7e2f433735f215b # v2.15.0
         with:
           egress-policy: audit
 
@@ -44,6 +44,7 @@ jobs:
         uses: coverallsapp/github-action@5cbfd81b66ca5d10c19b062c04de0199c215fb6e # master
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
+          fail-on-error: false # https://status.coveralls.io/incidents/pdbt7vdzlvpj
       - name: CodeClimate
         continue-on-error: true
         uses: paambaati/codeclimate-action@f429536ee076d758a24705203199548125a28ca7 # v9.0.0
