@@ -1,3 +1,38 @@
+## [2.11.1](https://github.com/ducktors/turborepo-remote-cache/compare/v2.11.0...v2.11.1) (2026-05-23)
+
+
+### Bug Fixes
+
+* **auth/jwt:** log 5xx errors at error level with distinct message ([0e9fc9c](https://github.com/ducktors/turborepo-remote-cache/commit/0e9fc9ca18dd913c0baccb93b78df1aaaa370d89))
+* **auth/jwt:** surface upstream JWT errors and log every auth failure ([5bcb024](https://github.com/ducktors/turborepo-remote-cache/commit/5bcb0244c82c9d209820b4d4291bea39f8141392)), closes [#757](https://github.com/ducktors/turborepo-remote-cache/issues/757)
+
+# [2.11.0](https://github.com/ducktors/turborepo-remote-cache/compare/v2.10.0...v2.11.0) (2026-05-23)
+
+
+### Bug Fixes
+
+* **app:** forward non-500 status codes from fastify errors ([e58ebe4](https://github.com/ducktors/turborepo-remote-cache/commit/e58ebe433007e3e736ba728c9fab3eae6103f6df))
+* **remote-cache:** use resolveBodyLimit for octet-stream parser bodyLimit ([768e02e](https://github.com/ducktors/turborepo-remote-cache/commit/768e02ed81952339ac24e170ab574308b5a0fac9))
+* **server:** wire BODY_LIMIT through resolveBodyLimit and log resolved value ([406f680](https://github.com/ducktors/turborepo-remote-cache/commit/406f68023c57b7d48f4d8676aaa743b70430665a))
+
+
+### Features
+
+* **env:** add resolveBodyLimit helper and BODY_LIMIT_DEFAULT constant ([28bf392](https://github.com/ducktors/turborepo-remote-cache/commit/28bf3920d9ebb6418a7d5f4338708cd2043f16ba))
+
+# [2.10.0](https://github.com/ducktors/turborepo-remote-cache/compare/v2.9.0...v2.10.0) (2026-05-23)
+
+
+### Bug Fixes
+
+* allow artifacts events in read-only mode ([3c74943](https://github.com/ducktors/turborepo-remote-cache/commit/3c74943933e4cdab3db072b12f7a036bf3bcf21e))
+* remove unsupported semver cooldown props from github-actions and docker dependabot config ([c018c20](https://github.com/ducktors/turborepo-remote-cache/commit/c018c20fc68f6aa9e5093f70730f4d03d7fd559b))
+
+
+### Features
+
+* support read-only mode to prevent unwanted cache update ([103e04a](https://github.com/ducktors/turborepo-remote-cache/commit/103e04ad9d4f7d6814501f5a48b1da15698dfdfb))
+
 # [2.9.0](https://github.com/ducktors/turborepo-remote-cache/compare/v2.8.9...v2.9.0) (2026-05-22)
 
 
